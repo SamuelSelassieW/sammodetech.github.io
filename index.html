@@ -11,212 +11,250 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<!-- Justify text (Intro + project descriptions) -->
+		<style>
+			/* Keep headings/buttons centered, justify body text */
+			#intro .intro-body,
+			#intro .intro-body p,
+			#intro .intro-body ul,
+			#intro .intro-body li {
+				text-align: justify !important;
+				text-justify: inter-word;
+			}
+
+			/* Keep intro body readable width */
+			#intro .intro-body {
+				max-width: 980px;
+				margin: 0 auto;
+			}
+
+			/* Ensure lists align nicely while the intro container is centered */
+			#intro .intro-body ul {
+				display: block;
+				margin: 0.75rem auto 1.5rem auto;
+				padding-left: 1.25rem;
+			}
+
+			/* Optional: justify all project card descriptions too */
+			.post.featured p,
+			section.posts article p {
+				text-align: justify !important;
+				text-justify: inter-word;
+			}
+		</style>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-	<h1>SAMUEL'S tech bank<br /></h1>
-	<span class="image avatar"><img src="images/SAMUEL.jpg" alt="Samuel's profile photo" /></span>
-	<p style="text-align: left;">
-		I’m <strong>Samuel Wunimboribin</strong>, a passionate and detail-oriented <strong>data analyst</strong> with a strong background in statistics, programming, and data visualization.<br>
-		A  graduate in <strong>mechanical engineering from the University for Development Studies (UDS), Ghana</strong>, I combine engineering principles with data science to solve practical problems.<br><br>
+			<!-- Intro -->
+			<div id="intro">
+				<h1>SAMUEL'S tech bank<br /></h1>
+				<span class="image avatar"><img src="images/SAMUEL.jpg" alt="Samuel's profile photo" /></span>
 
-		I specialize in tools like <strong>Python (Pandas, NumPy, Scikit-learn)</strong>, <strong>SQL</strong>, and <strong>Power BI</strong> to extract actionable insights from real-world datasets. My work includes:
-		<ul>
-			<li>Deploying machine learning models (e.g.solar power output model, computer vision waste classifier via <strong>Streamlit, Hugging face</strong>)</li>
-			<li>Creating educational dashboards using <strong>Power BI</strong></li>
-			<li>Engineering a semi-automated <strong>Fugu weaving machine</strong> with local materials</li>
-		</ul>
-		I’m currently deepening my skills in <strong>deep learning</strong> using <strong>Google Colab</strong>, building smarter models, and applying ML to datasets.<br><br>
+				<!-- Body text (justified) -->
+				<div class="intro-body">
+					<p>
+						I’m <strong>Samuel Wunimboribin</strong>, a passionate and detail-oriented <strong>data analyst</strong> with a strong background in statistics, programming, and data visualization.
+						A graduate in <strong>mechanical engineering from the University for Development Studies (UDS), Ghana</strong>, I combine engineering principles with data science to solve practical problems.
+					</p>
 
-		<strong>Technical Stack</strong><br>
-		<ul>
-			<li><strong>Languages:</strong> Python, SQL, HTML/CSS</li>
-			<li><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, TensorFlow</li>
-			<li><strong>Tools:</strong> Power BI, Google Colab, Streamlit, Docker, GitHub</li>
-			
-		</ul>
+					<p>
+						I specialize in tools like <strong>Python (Pandas, NumPy, Scikit-learn)</strong>, <strong>SQL</strong>, and <strong>Power BI</strong> to extract actionable insights from real-world datasets. My work includes:
+					</p>
 
-		I’m a community-minded learner — I’ve volunteered to teach SHS students, mentored youth in my town, and served as a Health Prefect. My goal is to become a <strong>machine learning expert</strong> who builds scalable, ethical, and locally useful AI tools.
-	</p>
-	<ul class="actions">
-		<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-	</ul>
-		</div>
+					<ul>
+						<li>Deploying machine learning models (e.g. solar power output model, computer vision waste classifier via <strong>Streamlit</strong>, <strong>Hugging Face</strong>)</li>
+						<li>Creating educational dashboards using <strong>Power BI</strong></li>
+						<li>Engineering a semi-automated <strong>Fugu weaving machine</strong> with local materials</li>
+					</ul>
 
+					<p>
+						I’m currently deepening my skills in <strong>deep learning</strong> using <strong>Google Colab</strong>, building smarter models, and applying ML to datasets.
+					</p>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">DATA WORLD</a>
+					<p><strong>Technical Stack</strong></p>
+					<ul>
+						<li><strong>Languages:</strong> Python, SQL, HTML/CSS</li>
+						<li><strong>Libraries:</strong> Pandas, NumPy, Scikit-learn, TensorFlow</li>
+						<li><strong>Tools:</strong> Power BI, Google Colab, Streamlit, Docker, GitHub</li>
+					</ul>
+
+					<p>
+						I’m a community-minded learner — I’ve volunteered to teach SHS students, mentored youth in my town, and served as a Health Prefect. My goal is to become a <strong>machine learning expert</strong> who builds scalable, ethical, and locally useful AI tools.
+					</p>
+				</div>
+
+				<ul class="actions">
+					<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+				</ul>
+			</div>
+
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="logo">DATA WORLD</a>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html">This is Authentic</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Featured Post -->
+				<article class="post featured" style="background-image: url('images/about-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;">
+					<header class="major">
+						<h2><a href="#">FLOWBENCH_SURROGATE_DEMO<br /></a></h2>
+						<p>
+							This is an interactive TensorFlow/Gradio demo of a CFD surrogate model (FlowBench) that predicts the next-step flow field (u, v, p) from the current state, geometry mask, and Reynolds number — with a “bring your own input” upload option.
+						</p>
 					</header>
+					<a href="#" class="image main"><img src="images/Desn.jpg" alt="" /></a>
+					<ul class="actions special">
+						<li>
+							<a href="https://huggingface.co/spaces/samuel-wunimboribin/flowbench-surrogate-demo"
+							   class="button large"
+							   target="_blank" rel="noopener">
+								OPEN
+							</a>
+						</li>
+					</ul>
+				</article>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">This is Authentic</a></li>
-							
+				<!-- Posts -->
+				<section class="posts">
+					<article>
+						<header>
+							<h2><a href="#">student(s) performance AI check<br /></a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/performance.jpg" alt="" /></a>
+						<p>this project takes in data and predicts the student's performance status (at risk of failure or safe)</p>
+						<ul class="actions special">
+							<li><a href="https://student-s-riskai-hbi4m86u7p4mm2fhdlvt3h.streamlit.app/" class="button">OPEN</a></li>
 						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</article>
+
+					<article>
+						<header>
+							<h2><a href="#">Waste_classifier<br /></a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/analysis.png" alt="" /></a>
+						<p>this is a deep learning model built to classify waste</p>
+						<ul class="actions special">
+							<li><a href="https://huggingface.co/spaces/samuel-wunimboribin/weather-classifier" class="button">OPEN</a></li>
 						</ul>
-					</nav>
+					</article>
 
-				<!-- Main -->
-					<div id="main">
+					<article>
+						<header>
+							<h2><a href="#">pokemon pandas project<br /></a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/data analysis.jpg" alt="" /></a>
+						<p>this is a python pandas data analysis on pokemon dataset</p>
+						<ul class="actions special">
+							<li><a href="https://github.com/selassiewunimboribin/python-pandas-analysis/blob/main/pokemon.ipynb" class="button">GO TO PROJECT</a></li>
+						</ul>
+					</article>
 
-						<!-- Featured Post -->
-							<article class="post featured" style="background-image: url('images/about-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;">
-								<header class="major">
-									
-									<h2><a href="#">AI_CAD_Assistant<br />
-									</a></h2>
-									<p>data this is an AI-powered CAD assistant that helps in designing and modifying CAD models</p>
-								</header>
-								<a href="#" class="image main"><img src="images/Desn.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/SamuelSelassieW/AI_CAD_Assistant/releases/tag/v1.1.0-D_aid" class="button large">SOON TO BE RELEASED</a></li>
-								</ul>
-							</article>
+					<article>
+						<header>
+							<h2><a href="#">Covid havoc estimator<br /></a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/model (1).jpg" alt="" /></a>
+						<p>This app predicts total COVID-19 deaths using a trained ML model. Try it by entering sample data!</p>
+						<ul class="actions special">
+							<li><a href="https://coviddeathsapp-app-mso6akuacald8ekjbimsyk.streamlit.app/" class="button">OPEN</a></li>
+						</ul>
+					</article>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-									
-										<h2><a href="#">student(s) performance AI check<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/performance.jpg" alt="" /></a>
-									<p>this project takes in data and predicts the student's performance status (at risk of failure or safe)</p>
-									<ul class="actions special">
-										<li><a href="https://student-s-riskai-hbi4m86u7p4mm2fhdlvt3h.streamlit.app/" class="button">OPEN</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="#">Waste_classifier<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/analysis.png" alt="" /></a>
-									<p>this is a deep learning model built to classify waste</p>
-									<ul class="actions special">
-										<li><a href="https://huggingface.co/spaces/samuel-wunimboribin/weather-classifier" class="button">OPEN</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="#">pokemon pandas project<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/data analysis.jpg" alt="" /></a>
-									<p>this is a python pandas data analysis on pokemon dataset</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/selassiewunimboribin/python-pandas-analysis/blob/main/pokemon.ipynb" class="button">GO TO PROJECT</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="#">Covid havoc estimator<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/model (1).jpg" alt="" /></a>
-									<p>This app predicts total COVID-19 deaths using a trained ML model. Try it by entering sample data!</p>
-									<ul class="actions special">
-										<li><a href="https://coviddeathsapp-app-mso6akuacald8ekjbimsyk.streamlit.app/" class="button">OPEN</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="#">weather forcast<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/weather.jpg" alt="" /></a>
-									<p>This app takes in parameters and makes a prediction of the weather condition based in the given parameters</p>
-									<ul class="actions special">
-										<li><a href="https://kpp8cws8eiotxvaya6biaa.streamlit.app/" class="button">OPEN</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="#">Solar Output<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/solar-panels.jpg" alt="" /></a>
-									<p>This app gives you the estimated power output of your solar set up from weather parameters</p>
-									<ul class="actions special">
-										<li><a href="https://solar-power-app-bjvvqv2etlhb4s4z87336x.streamlit.app/" class="button">OPEN</a></li>
-									</ul>
-								</article>
-							</section>
+					<article>
+						<header>
+							<h2><a href="#">weather forcast<br /></a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/weather.jpg" alt="" /></a>
+						<p>This app takes in parameters and makes a prediction of the weather condition based in the given parameters</p>
+						<ul class="actions special">
+							<li><a href="https://kpp8cws8eiotxvaya6biaa.streamlit.app/" class="button">OPEN</a></li>
+						</ul>
+					</article>
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+					<article>
+						<header>
+							<h2><a href="#">Solar Output<br /></a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/solar-panels.jpg" alt="" /></a>
+						<p>This app gives you the estimated power output of your solar set up from weather parameters</p>
+						<ul class="actions special">
+							<li><a href="https://solar-power-app-bjvvqv2etlhb4s4z87336x.streamlit.app/" class="button">OPEN</a></li>
+						</ul>
+					</article>
+				</section>
 
+				<!-- Footer -->
+				<footer>
+					<div class="pagination">
+						<!--<a href="#" class="previous">Prev</a>-->
+						<a href="#" class="page active">1</a>
+						<a href="#" class="page">2</a>
+						<a href="#" class="page">3</a>
+						<span class="extra">&hellip;</span>
+						<a href="#" class="page">8</a>
+						<a href="#" class="page">9</a>
+						<a href="#" class="page">10</a>
+						<a href="#" class="next">Next</a>
 					</div>
-
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Ghana, northern region, Wulensi, AD73 <br />
-								</p>
-							</section>
-							<section>
-								<h3>phone</h3>
-								<p><a href="#">(+233) 54-945-7111</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">samsela19@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; trustworthy</li><li>Design: <a href="https://html5up.net">Samuel's html</a></li></ul>
-					</div>
+				</footer>
 
 			</div>
 
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>Address</h3>
+						<p>Ghana, northern region, Wulensi, AD73 <br /></p>
+					</section>
+					<section>
+						<h3>phone</h3>
+						<p><a href="#">(+233) 54-945-7111</a></p>
+					</section>
+					<section>
+						<h3>Email</h3>
+						<p><a href="#">samsela19@gmail.com</a></p>
+					</section>
+					<section>
+						<h3>Social</h3>
+						<ul class="icons alt">
+							<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</section>
+				</section>
+			</footer>
+
+			<!-- Copyright -->
+			<div id="copyright">
+				<ul><li>&copy; trustworthy</li><li>Design: <a href="https://html5up.net">Samuel's html</a></li></ul>
+			</div>
+
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
-
-
-
-
