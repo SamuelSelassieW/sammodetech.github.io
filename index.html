@@ -112,12 +112,26 @@
 			<div id="main">
 
 				<!-- Featured Post -->
-				<article class="post featured" style="background-image: url('images/about-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: white;">
+				<!-- FIX: moved description <p> OUTSIDE header.major so it shows like the other project cards -->
+				<!-- FIX: removed the white-text + background-image styling that could make the paragraph look "missing" -->
+				<article class="post featured">
 					<header class="major">
-						<h2><a href="#">FLUID_FLOW_DEMO<br /></a></h2>
-						<p>This is an interactive TensorFlow/Gradio demo of a CFD surrogate model (FlowBench) that predicts the next-step flow field (u, v, p) from the current state, geometry mask, and Reynolds number — with a “bring your own input” upload option.</p>
+						<h2>
+							<a href="https://huggingface.co/spaces/samuel-wunimboribin/flowbench-surrogate-demo" target="_blank" rel="noopener">
+								FLUID_FLOW_DEMO<br />
+							</a>
+						</h2>
 					</header>
-					<a href="#" class="image main"><img src="images/flow.jpg" alt="" /></a>
+
+					<a href="https://huggingface.co/spaces/samuel-wunimboribin/flowbench-surrogate-demo" class="image main" target="_blank" rel="noopener">
+						<img src="images/flow.jpg" alt="FlowBench surrogate demo preview" />
+					</a>
+
+					<p>
+						This is an interactive TensorFlow/Gradio demo of a CFD surrogate model (FlowBench) that predicts the next-step flow field (u, v, p)
+						from the current state, geometry mask, and Reynolds number — with a "bring your own input" upload option.
+					</p>
+
 					<ul class="actions special">
 						<li>
 							<a href="https://huggingface.co/spaces/samuel-wunimboribin/flowbench-surrogate-demo"
@@ -138,7 +152,7 @@
 						<a href="#" class="image fit"><img src="images/performance.jpg" alt="" /></a>
 						<p>this project takes in data and predicts the student's performance status (at risk of failure or safe)</p>
 						<ul class="actions special">
-							<li><a href="https://student-s-riskai-hbi4m86u7p4mm2fhdlvt3h.streamlit.app/" class="button">OPEN</a></li>
+							<li><a href="https://student-s-riskai-hbi4m86u7p4mm2fhdlvt3h.streamlit.app/" class="button" target="_blank" rel="noopener">OPEN</a></li>
 						</ul>
 					</article>
 
@@ -149,7 +163,7 @@
 						<a href="#" class="image fit"><img src="images/analysis.png" alt="" /></a>
 						<p>this is a deep learning model built to classify waste</p>
 						<ul class="actions special">
-							<li><a href="https://huggingface.co/spaces/samuel-wunimboribin/weather-classifier" class="button">OPEN</a></li>
+							<li><a href="https://huggingface.co/spaces/samuel-wunimboribin/weather-classifier" class="button" target="_blank" rel="noopener">OPEN</a></li>
 						</ul>
 					</article>
 
@@ -160,7 +174,7 @@
 						<a href="#" class="image fit"><img src="images/data analysis.jpg" alt="" /></a>
 						<p>this is a python pandas data analysis on pokemon dataset</p>
 						<ul class="actions special">
-							<li><a href="https://github.com/selassiewunimboribin/python-pandas-analysis/blob/main/pokemon.ipynb" class="button">GO TO PROJECT</a></li>
+							<li><a href="https://github.com/selassiewunimboribin/python-pandas-analysis/blob/main/pokemon.ipynb" class="button" target="_blank" rel="noopener">GO TO PROJECT</a></li>
 						</ul>
 					</article>
 
@@ -171,7 +185,7 @@
 						<a href="#" class="image fit"><img src="images/model (1).jpg" alt="" /></a>
 						<p>This app predicts total COVID-19 deaths using a trained ML model. Try it by entering sample data!</p>
 						<ul class="actions special">
-							<li><a href="https://coviddeathsapp-app-mso6akuacald8ekjbimsyk.streamlit.app/" class="button">OPEN</a></li>
+							<li><a href="https://coviddeathsapp-app-mso6akuacald8ekjbimsyk.streamlit.app/" class="button" target="_blank" rel="noopener">OPEN</a></li>
 						</ul>
 					</article>
 
@@ -182,7 +196,7 @@
 						<a href="#" class="image fit"><img src="images/weather.jpg" alt="" /></a>
 						<p>This app takes in parameters and makes a prediction of the weather condition based in the given parameters</p>
 						<ul class="actions special">
-							<li><a href="https://kpp8cws8eiotxvaya6biaa.streamlit.app/" class="button">OPEN</a></li>
+							<li><a href="https://kpp8cws8eiotxvaya6biaa.streamlit.app/" class="button" target="_blank" rel="noopener">OPEN</a></li>
 						</ul>
 					</article>
 
@@ -193,7 +207,7 @@
 						<a href="#" class="image fit"><img src="images/solar-panels.jpg" alt="" /></a>
 						<p>This app gives you the estimated power output of your solar set up from weather parameters</p>
 						<ul class="actions special">
-							<li><a href="https://solar-power-app-bjvvqv2etlhb4s4z87336x.streamlit.app/" class="button">OPEN</a></li>
+							<li><a href="https://solar-power-app-bjvvqv2etlhb4s4z87336x.streamlit.app/" class="button" target="_blank" rel="noopener">OPEN</a></li>
 						</ul>
 					</article>
 				</section>
